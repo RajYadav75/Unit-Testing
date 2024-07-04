@@ -1,5 +1,6 @@
 package in.raj.controller;
 
+import in.raj.service.WelcomeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -17,7 +18,7 @@ import static org.mockito.Mockito.when;
 public class WelcomeRestControllerTest {
 
     @MockBean
-    private WelcomeService welcomeService;
+    private  WelcomeService welcomeService;
 
     @Autowired
     private MockMvc mockMvc;
