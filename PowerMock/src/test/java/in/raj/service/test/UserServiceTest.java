@@ -17,7 +17,7 @@ public class UserServiceTest {
         UserDao userdaoMock = PowerMockito.mock(UserDao.class);
 
         // defining behaviour for mock obj
-        when(userdaoMock.findNameById(101)).thenReturn("Raju");
+        when(userdaoMock.findNameById(101)).thenReturn("Raja");
 
         // injecting mock dao into service through constructor
         UserService service = new UserService(userdaoMock);
